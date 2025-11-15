@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./s.css">
+</head>
+<body>
+    <table id="calculator">
+        <tr>
+            <th   colspan="3"><input class="display-box" type="text" id="result" disabled></th>
+            <th><input type="button" id="but" value="AC" onclick="clearS()"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="1" id="button" onclick="display(1)"></th>
+            <th><input type="button" value="2" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="3" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="+" id="spcl" onclick="display(value)"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="4" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="5" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="6" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="-" id="spcl" onclick="display(value)"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="7" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="8" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="9" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="*" id="spcl" onclick="display(value)"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="." id="spcl" onclick="display(value)"></th>
+            <th><input type="button" value="0" id="button" onclick="display(value)"></th>
+            <th><input type="button" value="/" id="spcl" onclick="display(value)"></th>
+            <th><input type="button" value="=" id="spcl" onclick="sum()"></th>
+        </tr>
+    </table>
+    <script src="./javascript.js"></script>
+</body>
+</html>
